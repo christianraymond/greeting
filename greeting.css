@@ -149,15 +149,41 @@ button:hover
 .outputdiv p
 {
   text-align: left;
-  margin-left: 50px;
+  margin-left: 30px;
   padding-top: 35px;
   padding-left: 28px;
   font-family: "sans-serif";
-  font-size: 44px;
+  font-size: 24px;
   color: white;
 }
 
 .footer {
-  padding-bottom: 20px;
-  text-align: center;;
+ background: #eee;
+ bottom: -100px;
+ text-align: center;
+ position: relative;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
