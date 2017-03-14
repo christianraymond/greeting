@@ -1,0 +1,163 @@
+body
+{
+ margin:0;
+ background-color: green;
+}
+
+.container
+{
+ margin: 0;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+
+}
+
+.nav
+{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  background-color: blue;
+}
+
+h1
+{
+  color: white;
+  margin-top: 8px;
+  font-size: 38px;
+  font-family: "sans-serif";
+  text-align: center;
+}
+
+.inputdiv
+{
+  width: 100%;
+  height: 80%;
+  margin-top: 100px;
+  position: absolute;
+  border-color: #f22121 !important;
+}
+
+img
+{
+  margin-top: -25px;
+  position: absolute;
+   width: 30%;
+}
+label
+{
+  color: black;
+  font-size: 20px;
+  margin-left: 460px;
+  margin-top: 130px;
+  font-family: "sans-serif";
+  display:inline-block;
+}
+
+input
+{
+  border-width:medium;
+  border-color: black;
+  width: 200px;
+  margin-top: -20px;
+}
+
+.languagediv
+{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: -480px;
+  margin-right: 560px;
+}
+
+.languagediv input
+{
+  width: 10px;
+  padding-left: -300px;
+}
+
+.languagediv label
+{
+
+  margin: -15px;
+  font-family: "sans-serif";
+  font-size: 12px;
+}
+
+.counterdiv
+{
+  display: inline-block;
+  margin-top: -29px;
+  margin-left: 840px;
+  float: left;
+  padding-bottom: 0;
+}
+
+.counterdiv p
+{
+  font-family: "sans-serif";
+  font-size: 56px;
+  margin-top: 0px;
+  text-align: center;
+  margin-right: auto;
+}
+
+.counterdiv button
+{
+  background-color: #199C54;
+  border: 10px solid #199C54;
+  color: white;
+  font-size: 10px;
+  height: 32px;
+  width: 120px;
+  margin-top: -60px;
+  margin-left: auto;
+  border-radius: 6px;
+}
+button
+{
+  background-color: #199C54;
+  border: 10px solid #199C54;
+  color: white;
+  margin-top: 20px;
+  margin-left: 455px;
+  font-size: 18px;
+  height: 42px;
+  width: 290px;
+  display: block;
+  position: relative;
+  border-radius: 6px;
+}
+
+button:hover
+{
+  color: black;
+
+}
+
+.outputdiv
+{
+  margin-top: 450px;
+  margin-left: 395px;
+  margin-right: 470px;
+  height: 15%;
+  background-color:#f22121;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.outputdiv p
+{
+  text-align: left;
+  margin-left: 50px;
+  padding-top: 35px;
+  padding-left: 28px;
+  font-family: "sans-serif";
+  font-size: 44px;
+  color: white;
+}
+
+.footer {
+  padding-bottom: 20px;
+  text-align: center;;
+}
