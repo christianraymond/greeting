@@ -8,7 +8,7 @@ var resetButton = document.querySelector('#rButton');
 var count = 0;
 var nameGreeted = {};
 
-//localStorage so that the number of greetings can be stored in browser
+//localStorage so that the number of greetings can stored in browser
 countGreets.innerHTML = count;
 var storeCountValue = localStorage.getItem("countGreets");
 if(storeCountValue)
