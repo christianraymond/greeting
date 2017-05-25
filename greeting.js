@@ -57,8 +57,7 @@ function greet(){
   return nameEntered.value;
 };
 
-var reset = function()
-{
+function reset() { 
   localStorage.clear();
   count = 0
   countNameGreeted.innerHTML = count;

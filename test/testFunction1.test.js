@@ -1,31 +1,13 @@
-describe('The greet function', function(){
-
-    it('should greet the person in french', function(){
-        const i = 'Salut'
-        const nameEntered = 'Andre'
-        switch (i){ 
-        case 0 : "Hello, " + nameEntered.value + ' !';
-        break;
-    }
-      assert.equal(greet(), "Salut, " + nameEntered.value + ' !');
-  });
-    
-    it('should greet the person in english', function(){
-        const i = 'Hello'
-        switch (i){ 
-        case 1 : "Hello, " + nameEntered.value + ' !';
-        break;
-    }
-        assert.equal(greet(), "Hello, " + nameEntered.value + ' !');
- });
-    
-    it('should greet the person in Xhosa', function(){
-        const i = 'Hello'
-        switch (i){ 
-        case 2 : "Molo, " + nameEntered.value + ' !';
-        break;
-    }
-        assert.equal(greet(), "Molo, " + nameEntered.value + ' !');
+describe("The greets function", function(){
+    it('should greet a person in English language', function(){
+        assert.equal(greets('William', 'english'), ' Hello William')
     });
-});
 
+     it('should greet a person in French language', function(){
+        assert.equal(greets('John', 'french'), ' Salut John')
+    });
+
+    it('should greet a person in Xhosa language', function(){
+      assert.equal(greets('Samuel', 'xhosa'), ' Molo Samuel')
+    })
+});
