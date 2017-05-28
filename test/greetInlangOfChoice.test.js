@@ -4,7 +4,7 @@ describe("The greets function", function(){
     });
 
      it('should greet a person in French language', function(){
-        assert.equal(greets('John', 'french'), ' Salut John')
+        assert.equal(greets('John', 'french'), ' Bonjour John')
     });
 
     it('should greet a person in Xhosa language', function(){

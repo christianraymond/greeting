@@ -3,7 +3,7 @@ function greets(name, language) {
     return " Hello " + name;
   }
   if (language === 'french') {
-    return " Salut " + name
+    return " Bonjour " + name
   }
 
   if (language === 'xhosa') {
@@ -12,7 +12,7 @@ function greets(name, language) {
 }
 
 function getNameFunc(name) {
-  return 'Hi, ' + name;
+  return 'Hello, ' + name;
 }
 getNameFunc('Joe Dow');
 
@@ -31,7 +31,7 @@ function checkIfNameExist(map, key) {
 person = {
   name: ""
 }
-checkIfNameExist(person, 'oyama');
+
 
 
 
