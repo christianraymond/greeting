@@ -1,175 +1,10 @@
-body
-{
- margin:0;
- background-color: green;
-}
-
-.container
-{
- margin: 0;
- width: 100%;
- height: 100%;
- position: absolute;
-
-}
-
-.nav
-{
-  width: 100%;
-  height: 10%;
-  position: absolute;
-  background-color: blue;
-}
-
-h1
-{
-  color: white;
-  margin-top: 8px;
-  font-size: 38px;
-  font-family: "sans-serif";
-  text-align: center;
-}
-
-.inputdiv
-{
-  width: 100%;
-  height: 80%;
-  margin-top: 100px;
-  position: absolute;
-  border-color: #f22121 !important;
-}
-
-img
-{
-  margin-top: -25px;
-  position: absolute;
-   width: 30%;
-}
-label
-{
-  color: black;
-  font-size: 20px;
-  margin-left: 460px;
-  margin-top: 130px;
-  font-family: "sans-serif";
-  display:inline-block;
-}
-
-input
-{
-  border-width:medium;
-  border-color: black;
-  width: 200px;
-  margin-top: -20px;
-}
-
-.languagediv
-{
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: -480px;
-  margin-right: 560px;
-}
-
-.languagediv input
-{
-  width: 10px;
-  padding-left: -300px;
-}
-
-.languagediv label
-{
-
-  margin: -15px;
-  font-family: "sans-serif";
-  font-size: 12px;
-}
-
-.counterdiv
-{
-  display: inline-block;
-  margin-top: -29px;
-  margin-left: 840px;
-  float: left;
-  padding-bottom: 0;
-}
-
-.counterdiv p
-{
-  font-family: "sans-serif";
-  font-size: 56px;
-  margin-top: 0px;
-  text-align: center;
-  margin-right: auto;
-}
-
-.counterdiv button
-{
-  background-color: #199C54;
-  border: 10px solid #199C54;
-  color: white;
-  font-size: 10px;
-  height: 32px;
-  width: 120px;
-  margin-top: -60px;
-  margin-left: auto;
-  border-radius: 6px;
-}
-button
-{
-  background-color: #199C54;
-  border: 10px solid #199C54;
-  color: white;
-  margin-top: 20px;
-  margin-left: 455px;
-  font-size: 18px;
-  height: 42px;
-  width: 290px;
-  display: block;
-  position: relative;
-  border-radius: 6px;
-}
-
-button:hover
-{
-  color: black;
-
-}
-
-.outputdiv
-{
-  margin-top: 450px;
-  margin-left: 395px;
-  margin-right: 470px;
-  height: 15%;
-  background-color:#f22121;
-  border-radius: 10px 10px 10px 10px;
-}
-
-.outputdiv p
-{
-  text-align: left;
-  margin-left: 30px;
-  padding-top: 35px;
-  padding-left: 28px;
-  font-family: "sans-serif";
-  font-size: 24px;
-  color: white;
-}
-
-.footer {
- background: #eee;
- bottom: -100px;
- text-align: center;
- position: relative;
-}
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
 }
 
 li {
@@ -186,4 +21,109 @@ li a {
 
 li a:hover {
     background-color: #111;
+}
+
+
+body{
+ margin:0;
+ background-color: #121212;
+}
+
+.container{
+ margin: 0;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+}
+
+h1{ 
+  color: white;
+  margin-top: 8px;
+  font-size: 38px;
+  font-family: "sans-serif";
+  text-align: center;
+}
+
+#takename{ 
+  width: 20%;
+  height: 4%;
+  margin-top: -76px;
+  margin-left: -120px; 
+  position: absolute;
+  border-radius: 24px;   
+}
+
+.languagediv{ 
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: -480px;
+  margin-right: 560px;
+  color: white
+}
+
+.languagediv{ 
+  width: 10px;
+}
+
+label{ 
+  margin: -15px;
+  font-family: "sans-serif";
+  font-size: 12px;
+}
+
+#greetButton{ 
+  background-color: #121212;
+  border: 10px solid #121212;
+  color: white;
+  margin-left: -490px;
+  font-size: 14px;
+  height: 42px;
+  width: 90px;
+ cursor: pointer;
+}
+
+.counterdiv{ 
+  color: maroon;
+  margin-top: 7px;
+  margin-left: 840px;
+  float: left;
+  font-size: 26px;
+  text-align: center;  
+}
+
+.counterdiv button{ 
+  border: 10px solid #199C54;
+  font-size: 10px;
+  height: 32px;
+  width: 120px;
+  margin-top: 10px;
+  margin-left: auto;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.outputdiv{ 
+  margin-top: 160px;
+  margin-left: 395px;
+  margin-right: 470px;
+  height: 15%;
+  background-color: #121212;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.outputdiv p{ 
+  text-align: left;
+  margin-left: 30px;
+  padding-top: 35px;
+  padding-left: 28px;
+  font-family: "sans-serif";
+  font-size: 24px;
+  color: blue;
+}
+
+.footer {
+ background: #eee;
+ bottom: -300px;
+ text-align: center;
+ position: relative;
 }

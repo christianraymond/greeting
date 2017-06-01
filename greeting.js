@@ -30,7 +30,7 @@ function greet(){
     if (langBtnChoice[i].checked){ 
     
       switch (i){ 
-        case 0 : displayText.innerHTML = "Salut, " + nameEntered.value + ' !';
+        case 0 : displayText.innerHTML = "Bonjour, " + nameEntered.value + '!'    
         break;
         case 1 : displayText.innerHTML = "Hello, " + nameEntered.value + ' !';
         break;
@@ -40,7 +40,7 @@ function greet(){
       nameGreeted = JSON.parse(localStorage.getItem('nameGreeted'));
 
       if (nameGreeted[nameEntered.value] === undefined){ 
-          
+
           nameGreeted[nameEntered.value] = true;
           localStorage.setItem('nameGreeted', JSON.stringify(nameGreeted));
           count++;
@@ -49,7 +49,7 @@ function greet(){
 
           console.log(count);
       }
-
+    
     }
   }
 
