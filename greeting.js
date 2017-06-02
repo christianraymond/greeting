@@ -25,16 +25,28 @@ if(storeCountValue) {
 //Bellow, are the functions that allow the person to be greeted,
 //Using their language of choice.
 function greet(){
-  for(i = 0; i < langBtnChoice.length; i++){ 
+    var checkIfIsName = nameEntered.value.trim();
+    
+    if(checkIfIsName === ''){ 
+        //I want the same message to prompt when numbers are inputed
+          displayText.innerHTML = 'Ooops, you have to enter something !';
+              return
+    };
+     for(var i = 0; i < langBtnChoice.length; i++){ 
    
     if (langBtnChoice[i].checked){ 
     
       switch (i){ 
-        case 0 : displayText.innerHTML = "Bonjour, " + nameEntered.value + '!'    
+              
+        case 0 : displayText.innerHTML = 'Bonjour, ' + nameEntered.value + ' !';
         break;
+              
         case 1 : displayText.innerHTML = "Hello, " + nameEntered.value + ' !';
         break;
+              
         case 2 : displayText.innerHTML = "Molo, " + nameEntered.value + ' !';
+        break;
+              
       }
 
       nameGreeted = JSON.parse(localStorage.getItem('nameGreeted'));
