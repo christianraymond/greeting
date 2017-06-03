@@ -13,12 +13,12 @@ var nameGreeted = {};
 countNameGreeted.innerHTML = count;
 var storeCountValue = localStorage.getItem("countNameGreeted");
 
-if(storeCountValue) {                  
+if(storeCountValue) {
    count = Number(storeCountValue);
    countNameGreeted.innerHTML = count;
-  } 
+  }
 
-  if (localStorage.getItem('nameGreeted') === null){ 
+  if (localStorage.getItem('nameGreeted') === null){
       localStorage.setItem('nameGreeted', JSON.stringify(nameGreeted));
     }
 
@@ -26,32 +26,33 @@ if(storeCountValue) {
 //Using their language of choice.
 function greet(){
     var checkIfIsName = nameEntered.value.trim();
-    
-    if(checkIfIsName === ''){ 
+    if(checkIfIsName === '' || checkIfIsName == '0' || checkIfIsName == '1' || checkIfIsName == '2' ||
+      checkIfIsName == '3' || checkIfIsName == '4' || checkIfIsName == '5' || checkIfIsName == '6' ||
+      checkIfIsName == '7' || checkIfIsName == '8' || checkIfIsName == '9'){
         //I want the same message to prompt when numbers are inputed
           displayText.innerHTML = 'Ooops, you have to enter something !';
               return
     };
-     for(var i = 0; i < langBtnChoice.length; i++){ 
-   
-    if (langBtnChoice[i].checked){ 
-    
-      switch (i){ 
-              
+     for(var i = 0; i < langBtnChoice.length; i++){
+
+    if (langBtnChoice[i].checked){
+
+      switch (i){
+
         case 0 : displayText.innerHTML = 'Bonjour, ' + nameEntered.value + ' !';
         break;
-              
+
         case 1 : displayText.innerHTML = "Hello, " + nameEntered.value + ' !';
         break;
-              
+
         case 2 : displayText.innerHTML = "Molo, " + nameEntered.value + ' !';
         break;
-              
+
       }
 
       nameGreeted = JSON.parse(localStorage.getItem('nameGreeted'));
 
-      if (nameGreeted[nameEntered.value] === undefined){ 
+      if (nameGreeted[nameEntered.value] === undefined){
 
           nameGreeted[nameEntered.value] = true;
           localStorage.setItem('nameGreeted', JSON.stringify(nameGreeted));
@@ -61,7 +62,7 @@ function greet(){
 
           console.log(count);
       }
-    
+
     }
   }
 
@@ -69,7 +70,7 @@ function greet(){
   return nameEntered.value;
 };
 
-function reset() { 
+function reset() {
   localStorage.clear();
   count = 0
   countNameGreeted.innerHTML = count;
